@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="fonts" href="styles-fonts.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="main.js" type="module" defer></script>
     <title>The Clueless Cook</title>
 </head>
-
 <body>
 <header>
-    <div>
-        <div>
-            <div>
+    <div class="navbar">
+        <div class="container">
+            <div class="navbarLogo">
                 <h1>The Clueless Cook</h1>
             </div>
             <nav>
-                <ul>
+                <ul class="navbarList">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Calculator</a></li>
@@ -25,11 +23,11 @@
             </nav>
         </div>
     </div>
-    <div>
-        <div>
-            <h3>Delicious Recipes.</h3>
-            <h3>Daily Updated.</h3>
-            <button type="button">Find Recipes</button>
+    <div class="containerImage">
+        <div class="hdrText">
+            <h3 id="hdrline1">Delicious Recipes.</h3>
+            <h3 id="hdrline2">Daily Updated.</h3>
+            <button class="findbtn" type="button">Find Recipes <i class=material-icons>arrow_forward</i></button>
         </div>
     </div>
 </header>
@@ -52,30 +50,31 @@
     </section>
     <section>
         <form>
-            <label for="">
-                <input type="text"><span>*</span>
+            <label for="ingriedients-field">
+                <input id="ingriedients-field" type="text" placeholder="Zoek op ingriedienten"><span>*</span>
             </label>
-            <select name="meal-type-field" id="meal-type-field">
-                <option selected value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            </label>
-            <label for="">
-                <select name="" id="">
-                    <option selected value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+            <label for="meal-type-field">
+                <select name="meal-type-field" id="meal-type-field">
+                    <option selected value="">Meal type</option>
+                    <option value="Breakfast">Ontbijt</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Snack">Snack</option>
+                    <option value="Teatime">Teatime</option>
                 </select>
             </label>
-            <button type="submit"></button>
+            <label for="cusine-field">
+                <select name="cusine-field" id="cusine-field">
+                    <option selected value="">Cusine</option>
+                    <option value="French">French</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="Asian">Asian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Italian">Italian</option>
+                </select>
+            </label>
+            <button type="submit">Search</button>
         </form>
     </section>
     <div>
@@ -106,46 +105,45 @@
     </div>
     </section>
 </main>
-<footer>
+<footer class="footerbar">
     <div>
         <h4>Information</h4>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="ftr-information">
+            <li>Nullam a enim</li>
+            <li>Quisque cursus</li>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
         </ul>
     </div>
     <div>
         <h4>About</h4>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="ftr-information">
+            <li>Quisque cursus</li>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
         </ul>
     </div>
     <div>
         <h4>Contact</h4>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="ftr-contact">
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+            <li>Nullam a enim</li>
         </ul>
     </div>
     <div>
         <h4>Social</h4>
-        <span class="">
-            <img src="" alt="">
+        <span class="facebookIcon">
+            <img src="/assets/facebook.png" alt="fbIcon">
         </span>
-        <span class="">
-            <img src="" alt="">
+        <span class="instagramIcon">
+            <img src="/assets/instagram.png" alt="instaIcon">
         </span>
-        <span class="">
-            <img src="" alt="">
+        <span class="linkedinIcon">
+            <img src="/assets/linkedin.png" alt="linkIcon">
         </span>
-        <span class="">
-            <img src="" alt="">
+        <span class="twitterIcon">
+            <img src="/assets/twitter.png" alt="twttrIcon">
         </span>
     </div>
 </footer>
