@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -11,11 +11,11 @@
 <header>
     <div class="navbar">
         <div class="container">
-            <div class="navbarLogo">
+            <div class="navbar-logo">
                 <h1>The Clueless Cook</h1>
             </div>
             <nav>
-                <ul class="navbarList">
+                <ul class="navbar-list">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Calculator</a></li>
@@ -23,44 +23,46 @@
             </nav>
         </div>
     </div>
-    <div class="containerImage">
+    <div class="container-image">
         <div class="hdrText">
             <h3 id="hdrline1">Delicious Recipes.</h3>
             <h3 id="hdrline2">Daily Updated.</h3>
-            <button class="findbtn" type="button">Find Recipes <i class=material-icons>arrow_forward</i></button>
+            <div class="findbtn">
+            <button class="iconbutton" type="button">Find Recipes <i class=material-icons>arrow_forward</i></button>
+            </div>
         </div>
     </div>
 </header>
 <main>
-    <section>
+    <section class="random-recipes">
         <div>
             <article>
                 <img src="" alt="">
-                <p></p>
+                <p>Joe</p>
             </article>
             <article>
                 <img src="" alt="">
-                <p></p>
+                <p>Yoo</p>
             </article>
             <article>
                 <img src="" alt="">
-                <p></p>
+                <p>Boe</p>
             </article>
         </div>
     </section>
-    <section>
-        <form>
-            <label for="ingriedients-field">
-                <input id="ingriedients-field" type="text" placeholder="Zoek op ingriedienten"><span>*</span>
+    <section class="container-form">
+        <form class="form">
+            <label for="ingriedients-field" class="container-ingriedients">
+                <input id="ingriedients-field" type="text" placeholder="Recipe search">
+                <i class=material-icons>search</i>
             </label>
             <label for="meal-type-field">
                 <select name="meal-type-field" id="meal-type-field">
                     <option selected value="">Meal type</option>
-                    <option value="Breakfast">Ontbijt</option>
-                    <option value="Lunch">Lunch</option>
-                    <option value="Lunch">Lunch</option>
-                    <option value="Snack">Snack</option>
+                    <option value="Breakfast">Breakfast</option>
                     <option value="Teatime">Teatime</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
                 </select>
             </label>
             <label for="cusine-field">
@@ -74,8 +76,26 @@
                     <option value="Italian">Italian</option>
                 </select>
             </label>
-            <button type="submit">Search</button>
-        </form>
+            <label for="dieet-type-field">
+                <select name="dieet-type-field" id="dieet-type-field">
+                    <option selected value="">Diet type</option>
+                    <option value="Breakfast">Low Carb</option>
+                    <option value="Teatime">Vegan</option>
+                    <option value="Lunch">Low Kcal</option>
+                    <option value="Dinner">Lactose free</option>
+                </select>
+            </label>
+            <label for="time-field">
+                <select name="time-field" id="time-field">
+                    <option selected value="">Time</option>
+                    <option value="Breakfast">0-20 MIN</option>
+                    <option value="Teatime">20-40 MIN</option>
+                    <option value="Lunch">40-60 MIN</option>
+                    <option value="Dinner">60 MIN +</option>
+                </select>
+            </label>
+            <button class="iconbutton" type="submit">Search <i class=material-icons>arrow_forward</i></button>
+            </form>
     </section>
     <div>
         <article>
@@ -106,6 +126,7 @@
     </section>
 </main>
 <footer class="footerbar">
+    <div class="footertext">
     <div>
         <h4>Information</h4>
         <ul class="ftr-information">
@@ -131,20 +152,21 @@
             <li>Nullam a enim</li>
         </ul>
     </div>
-    <div>
+    <div class="socials">
         <h4>Social</h4>
-        <span class="facebookIcon">
+        <span class="social-icons">
             <img src="/assets/facebook.png" alt="fbIcon">
         </span>
-        <span class="instagramIcon">
+        <span class="social-icons">
             <img src="/assets/instagram.png" alt="instaIcon">
         </span>
-        <span class="linkedinIcon">
+        <span class="social-icons">
             <img src="/assets/linkedin.png" alt="linkIcon">
         </span>
-        <span class="twitterIcon">
+        <span class="social-icons">
             <img src="/assets/twitter.png" alt="twttrIcon">
         </span>
+        </div>
     </div>
 </footer>
 </body>

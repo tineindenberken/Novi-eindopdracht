@@ -27,6 +27,7 @@ body {
 
 }
 
+/*reusable*/
 .navbar {
     width: 100%;
     color: #004467;
@@ -34,6 +35,7 @@ body {
     height: 70px;
 }
 
+/*reusable*/
 .navbar .container {
     width: 1600px;
     margin: 0 30px 300px 200px;
@@ -43,17 +45,20 @@ body {
     height: 70px;
 }
 
+/*reusable*/
 nav {
     display: flex;
     flex-direction: row;
     margin-right: 200px;
 }
 
+/*reusable*/
 nav ul {
     display: flex;
     flex-direction: row;
 }
 
+/*reusable*/
 nav ul li {
     list-style: none;
     color: #004467;
@@ -63,11 +68,13 @@ nav ul li {
     margin: 0 10px;
 }
 
+/*reusable*/
 a:link {
     text-decoration: none;
 }
 
-.navbarLogo {
+/*reusable*/
+.navbar-logo {
     margin-left: 100px;
     font-family: Austein Script, sans-serif;
     font-size: 20px;
@@ -77,20 +84,91 @@ a:link {
     font-weight: normal;
 }
 
-.containerImage {
+/*reusable*/
+.iconbutton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #64DFDF;
+    width: 170px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #004467;
+}
+
+.container-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     height: 600px;
-    padding: 100px 0 0 300px;
+    padding: 100px 0 100px 300px;
     color: white;
     font-size: 60px;
     background-image: url("/assets/hero-image.jpg");
-    background-color: #1B365A;
+    background-color: #004467;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.random-recipes {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    height: 200px;
+    background-color: white;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #004467;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 50px;
+}
+
+.container-ingriedients {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+input {
+    font-size: medium;
+    font-family: Poppins, sans-serif;
+    border-style: none;
+    width: 200px;
+}
+
+select {
+    background-color: white;
+    font-size: medium;
+    font-family: Poppins, sans-serif;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
 }
 
 .footerbar {
@@ -98,22 +176,31 @@ a:link {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 200px;
-    background-color: #1B365A;
-
+    height: 300px;
+    background-color: #004467;
+    padding: 100px 100px 100px 100px;
 }
+
+.footertext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 70%;
+}
+
 
 h4 {
     display: flex;
-
+    flex-direction: row;
+    justify-content: flex-start;
     font-size: 16px;
     font-family: Poppins, sans-serif;
     color: #64DFDF;
-    margin-left: 40px;
     margin-bottom: 30px;
 }
 
-
+/*reusable*/
 .ftr-information {
     display: flex;
     flex-direction: column;
@@ -123,8 +210,6 @@ h4 {
     font-family: Poppins, sans-serif;
     color: white;
     list-style-type: none;
-
-
 }
 
 .ftr-contact {
@@ -137,6 +222,22 @@ h4 {
     color: white;
     list-style-type: none;
 }
+
+.socials {
+    height: 150px;
+    width: 300px;
+}
+
+/*reusable*/
+.social-icons {
+    display: inline-flex;
+    background-color: #64DFDF;
+    border-radius: 80%;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 /* ------------------------------- 3. Layout --------------------------------------- */
