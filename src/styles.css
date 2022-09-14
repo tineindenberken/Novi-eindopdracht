@@ -18,8 +18,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline-color: green;
-    outline-style: solid;
+    /*outline-color: green;*/
+    /*outline-style: solid;*/
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 .navbar {
     width: 100%;
     color: #004467;
-    background-color: white;
+    background-color: #F8F9FA;
     height: 70px;
 }
 
@@ -69,15 +69,16 @@ nav ul li {
 }
 
 /*reusable*/
-a:link {
-    text-decoration: none;
-}
+a:link { color: #004467; text-decoration: none; }
+a:visited { color: #004467; text-decoration: none; }
+a:active { color: #004467; text-decoration: none; }
 
 /*reusable*/
 .navbar-logo {
     margin-left: 100px;
     font-family: Austein Script, sans-serif;
     font-size: 20px;
+    font-weight: normal;
 }
 
 #hdrline2 {
@@ -89,7 +90,7 @@ a:link {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #64DFDF;
+    background-color: #38A3A5;
     width: 170px;
     height: 35px;
     border-radius: 5px;
@@ -148,7 +149,6 @@ a:link {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     background-color: white;
     width: 300px;
     height: 35px;
@@ -194,10 +194,11 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    font-size: 16px;
     font-family: Poppins, sans-serif;
-    color: #64DFDF;
-    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #38A3A5;
+    margin-bottom: 20px;
 }
 
 /*reusable*/
@@ -206,21 +207,12 @@ h4 {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
-    font-family: Poppins, sans-serif;
+    font-weight: lighter;
     color: white;
     list-style-type: none;
-}
-
-.ftr-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 75px;
-    font-family: Poppins, sans-serif;
-    color: white;
-    list-style-type: none;
+    line-height: 40px;
 }
 
 .socials {
@@ -231,7 +223,7 @@ h4 {
 /*reusable*/
 .social-icons {
     display: inline-flex;
-    background-color: #64DFDF;
+    background-color: #38A3A5;
     border-radius: 80%;
     margin: 10px 10px 10px 10px;
     padding: 5px 5px 5px 5px;
