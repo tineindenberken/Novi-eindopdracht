@@ -16,7 +16,7 @@
             </div>
             <nav>
                 <ul class="navbar-list">
-                    <li><a href="">Home</a></li>
+                    <li><a href="/src/index.html">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="/src/calculator.html" target="_blank">Calculator</a></li>
                 </ul>
@@ -37,21 +37,21 @@
     <section class="random-recipes">
         <div>
             <article>
-                <img src="" alt="">
+                <img src="#" alt="">
                 <p>Joe</p>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="#" alt="">
                 <p>Yoo</p>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="#" alt="">
                 <p>Boe</p>
             </article>
         </div>
     </section>
     <section class="container-form">
-        <form class="form">
+        <form class="form" id="onSubmit">
             <label for="ingriedients-field" class="container-ingriedients">
                 <input id="ingriedients-field" type="text" placeholder="Recipe search">
                 <i class=material-icons>search</i>
@@ -62,64 +62,80 @@
                     <option value="Breakfast">Breakfast</option>
                     <option value="Teatime">Teatime</option>
                     <option value="Lunch">Lunch</option>
+                    <option value="Snack">Snack</option>
                     <option value="Dinner">Dinner</option>
                 </select>
             </label>
             <label for="cusine-field">
                 <select name="cusine-field" id="cusine-field">
                     <option selected value="">Cusine</option>
-                    <option value="French">French</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Dutch">Dutch</option>
+                    <option value="American">American</option>
                     <option value="Asian">Asian</option>
+                    <option value="British">British</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="Central Europe">Central Europe</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Eastern Europe">Eastern Europe</option>
+                    <option value="French">French</option>
+                    <option value="Indian">Indian</option>
                     <option value="Italian">Italian</option>
-                    <option value="Italian">Italian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Kosher">Kosher</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Middle Eastern">Middle Eastern</option>
+                    <option value="Nordic">Nordic</option>
+                    <option value="South American">South American</option>
+                    <option value="South East Asian">Mexican</option>
                 </select>
             </label>
             <label for="dieet-type-field">
                 <select name="dieet-type-field" id="dieet-type-field">
                     <option selected value="">Diet type</option>
-                    <option value="Breakfast">Low Carb</option>
-                    <option value="Teatime">Vegan</option>
-                    <option value="Lunch">Low Kcal</option>
-                    <option value="Dinner">Lactose free</option>
+                    <option value="Balanced">Balanced</option>
+                    <option value="High-Fiber">High-Fiber</option>
+                    <option value="High-Protein">High-Protein</option>
+                    <option value="Low-Carb">Low-Carb</option>
+                    <option value="Low-Fat">Low-Fat</option>
+                    <option value="Low-Sodium">Low-Sodium</option>
                 </select>
             </label>
             <label for="time-field">
                 <select name="time-field" id="time-field">
                     <option selected value="">Time</option>
-                    <option value="Breakfast">0-20 MIN</option>
-                    <option value="Teatime">20-40 MIN</option>
-                    <option value="Lunch">40-60 MIN</option>
-                    <option value="Dinner">60 MIN +</option>
+                    <option value="0-20 MIN">0-20 MIN</option>
+                    <option value="20-40 MIN">20-40 MIN</option>
+                    <option value="40-60 MIN">40-60 MIN</option>
+                    <option value="60 MIN +">60 MIN +</option>
                 </select>
             </label>
             <button class="iconbutton" type="submit">Search <i class=material-icons>arrow_forward</i></button>
             </form>
     </section>
+    <ul id="recipe-card-list"></ul>
     <div>
         <article>
-            <img src="" alt="">
+            <img src="#" alt="">
             <p></p>
         </article>
         <article>
-            <img src="" alt="">
+            <img src="#" alt="">
             <p></p>
         </article>
         <article>
-            <img src="" alt="">
+            <img src="#" alt="">
             <p></p>
         </article>
         <article>
-            <img src="" alt="">
+            <img src="#" alt="">
             <p></p>
         </article>
         <article>
-            <img src="" alt="">
+            <img src="#" alt="">
             <p></p>
         </article>
         <article>
-            <img src="" alt="">
+            <img src="#" alt="">
             <p></p>
         </article>
     </div>
@@ -169,5 +185,6 @@
         </div>
     </div>
 </footer>
+<span id="error-message"></span>
 </body>
 </html>
