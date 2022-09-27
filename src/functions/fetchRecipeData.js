@@ -3,7 +3,7 @@ import createRecipeCard from "./createRecipeCard";
 
 
 // Fetching data from Edamam API
-export default async function fetchRecipeData( searchQuery, mealType, cuisineType, dietLabels, time ) {
+export default async function fetchRecipeData(searchQuery, mealType, cuisineType, dietLabels, time) {
 
     // Declare input value for API
     const URI = "https://api.edamam.com"
@@ -26,21 +26,21 @@ export default async function fetchRecipeData( searchQuery, mealType, cuisineTyp
                 dietLabels: dietLabels,
                 // time: time,
             }
-        } )
+        })
 
         // Store recipe key in variale
         const arrayOfRecipes = response.data.hits
-        console.log( arrayOfRecipes );
+        console.log(arrayOfRecipes);
         // Deze moet er straks uit ^^
 
-        createRecipeCard( arrayOfRecipes);
+        createRecipeCard(arrayOfRecipes);
 
         // Catch error message and show them in UI
-    } catch ( e ) {
+    } catch (e) {
         const error = document.getElementById('error-message')
-        if ( e.response.status === 404 ) {
+        if (e.response.status === 404) {
             error.innerContent = 'Page not found'
-        } else if ( e.response.status === 500 ) {
+        } else if (e.response.status === 500) {
             error.innerContent = 'Internal server error'
         }
     }
