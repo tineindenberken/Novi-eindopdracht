@@ -3,7 +3,7 @@ import createRecipeCard from "./createRecipeCard";
 
 
 // Fetching data from Edamam API
-export default async function fetchRecipeData( searchQuery ) {
+export default async function fetchRecipeData( searchQuery, mealType, cuisineType, dietLabels, time ) {
 
     // Declare input value for API
     const URI = "https://api.edamam.com"
@@ -20,7 +20,11 @@ export default async function fetchRecipeData( searchQuery ) {
                 type: "public",
                 app_id: API_ID,
                 app_key: API_KEY,
-                q: searchQuery
+                q: searchQuery,
+                mealType: mealType,
+                cuisineType: cuisineType,
+                dietLabels: dietLabels,
+                // time: time,
             }
         } )
 

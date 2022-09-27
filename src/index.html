@@ -66,9 +66,9 @@
                     <option value="Dinner">Dinner</option>
                 </select>
             </label>
-            <label for="cusine-field">
-                <select name="cusine-field" id="cusine-field">
-                    <option selected value="">Cusine</option>
+            <label for="cuisine-type-field">
+                <select name="cuisine-type-field" id="cuisine-type-field">
+                    <option selected value="">Cuisine</option>
                     <option value="American">American</option>
                     <option value="Asian">Asian</option>
                     <option value="British">British</option>
@@ -89,8 +89,8 @@
                     <option value="South East Asian">Mexican</option>
                 </select>
             </label>
-            <label for="dieet-type-field">
-                <select name="dieet-type-field" id="dieet-type-field">
+            <label for="diet-labels">
+                <select name="diet-labels" id="diet-labels">
                     <option selected value="">Diet type</option>
                     <option value="Balanced">Balanced</option>
                     <option value="High-Fiber">High-Fiber</option>
@@ -103,9 +103,9 @@
             <label for="time-field">
                 <select name="time-field" id="time-field">
                     <option selected value="">Time</option>
-                    <option value="0-20 MIN">0-20 MIN</option>
-                    <option value="20-40 MIN">20-40 MIN</option>
-                    <option value="40-60 MIN">40-60 MIN</option>
+                    <option value="MIN">MIN +</option>
+                    <option value="MIN-MAX">MIN-MAX</option>
+                    <option value="MAX">MAX</option>
                     <option value="60 MIN +">60 MIN +</option>
                 </select>
             </label>
@@ -113,6 +113,7 @@
             </form>
     </section>
     <ul id="recipe-card-list"></ul>
+    <span id="error-message"></span>
     <div>
         <article>
             <img src="#" alt="">
@@ -139,8 +140,7 @@
             <p></p>
         </article>
     </div>
-    </section>
-</main>
+    </main>
 <footer class="footerbar">
     <div class="footertext">
     <div>
