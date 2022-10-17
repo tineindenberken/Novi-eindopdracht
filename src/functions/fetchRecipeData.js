@@ -21,10 +21,11 @@ export default async function fetchRecipeData(searchQuery, mealType, cuisineType
                 app_id: API_ID,
                 app_key: API_KEY,
                 q: searchQuery,
-                mealType: mealType,
-                cuisineType: cuisineType,
-                dietLabels: dietLabels,
-                // time: time,
+                random: true,
+                mealType: mealType || null,
+                cuisineType: cuisineType || null,
+                dietLabels: dietLabels || null,
+                time: time || null,
             }
         })
 

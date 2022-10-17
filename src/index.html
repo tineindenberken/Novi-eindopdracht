@@ -8,182 +8,153 @@
     <title>The Clueless Cook</title>
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <div class="container">
-            <div class="navbar-logo">
-                <h1>The Clueless Cook</h1>
-            </div>
-            <nav>
-                <ul class="navbar-list">
-                    <li><a href="/src/index.html">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="/src/calculator.html" target="_blank">Calculator</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="container-image">
-        <div class="hdrText">
-            <h3 id="hdrline1">Delicious Recipes.</h3>
-            <h3 id="hdrline2">Daily Updated.</h3>
-            <div class="findbtn">
-                <button class="iconbutton" type="button">Find Recipes <i class=material-icons>arrow_forward</i></button>
+<header class="outer-container">
+    <div class="inner-container">
+        <nav class="header__navbar">
+            <span class="header__logo">The Clueless Cook</span>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="pages/recipe.html" target="_blank">About</a></li>
+                <li><a href="pages/calculator.html" target="_blank">Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="outer-container header__hero">
+            <div class="inner-container header__content">
+                <h1>Delicious Recipes.</h1>
+                <p>Daily updated.</p>
+                <button class="btn btn-header" type="button"><a href="#">Find Recipes <i class=material-icons>arrow_forward</i></a>
+                </button>
             </div>
         </div>
     </div>
 </header>
+
 <main>
-    <section class="random-recipes">
-        <div>
-            <article>
-                <img src="#" alt="">
-                <p>Joe</p>
-            </article>
-            <article>
-                <img src="#" alt="">
-                <p>Yoo</p>
-            </article>
-            <article>
-                <img src="#" alt="">
-                <p>Boe</p>
-            </article>
+
+    <section class="outer-container">
+        <div class="inner-container white-space">
+
+            <ul id="random-recipes-container">
+                <!-- Cards via innnerHTML -->
+            </ul>
+            <p id="upper-error"></p>
         </div>
     </section>
-    <section class="container-form">
-        <form class="form" id="onSubmit">
-            <label for="ingriedients-field" class="container-ingriedients">
-                <input id="ingriedients-field" type="text" placeholder="Recipe search">
-                <i class=material-icons>search</i>
-            </label>
-            <label for="meal-type-field">
-                <select name="meal-type-field" id="meal-type-field">
-                    <option selected value="">Meal type</option>
-                    <option value="Breakfast">Breakfast</option>
-                    <option value="Teatime">Teatime</option>
-                    <option value="Lunch">Lunch</option>
-                    <option value="Snack">Snack</option>
-                    <option value="Dinner">Dinner</option>
-                </select>
-            </label>
-            <label for="cuisine-type-field">
-                <select name="cuisine-type-field" id="cuisine-type-field">
-                    <option selected value="">Cuisine</option>
-                    <option value="American">American</option>
-                    <option value="Asian">Asian</option>
-                    <option value="British">British</option>
-                    <option value="Caribbean">Caribbean</option>
-                    <option value="Central Europe">Central Europe</option>
-                    <option value="Chinese">Chinese</option>
-                    <option value="Eastern Europe">Eastern Europe</option>
-                    <option value="French">French</option>
-                    <option value="Indian">Indian</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Kosher">Kosher</option>
-                    <option value="Mediterranean">Mediterranean</option>
-                    <option value="Mexican">Mexican</option>
-                    <option value="Middle Eastern">Middle Eastern</option>
-                    <option value="Nordic">Nordic</option>
-                    <option value="South American">South American</option>
-                    <option value="South East Asian">Mexican</option>
-                </select>
-            </label>
-            <label for="diet-labels">
-                <select name="diet-labels" id="diet-labels">
-                    <option selected value="">Diet type</option>
-                    <option value="Balanced">Balanced</option>
-                    <option value="High-Fiber">High-Fiber</option>
-                    <option value="High-Protein">High-Protein</option>
-                    <option value="Low-Carb">Low-Carb</option>
-                    <option value="Low-Fat">Low-Fat</option>
-                    <option value="Low-Sodium">Low-Sodium</option>
-                </select>
-            </label>
-            <label for="time-field">
-                <select name="time-field" id="time-field">
-                    <option selected value="">Time</option>
-                    <option value="MIN">MIN +</option>
-                    <option value="MIN-MAX">MIN-MAX</option>
-                    <option value="MAX">MAX</option>
-                    <option value="60 MIN +">60 MIN +</option>
-                </select>
-            </label>
-            <button class="iconbutton" type="submit">Search <i class=material-icons>arrow_forward</i></button>
-        </form>
+
+    <section class="outer-container main__search-form-container">
+        <div class="inner-container">
+            <form class="main__search-form" id="onSubmit" action="">
+                <label for="ingriedients-field" class="container-ingriedients-inputfield">
+                    <input id="ingriedients-field" type="text" placeholder="Recipe search">
+                    <i class=material-icons>search</i>
+                </label>
+                <label for="meal-type-field">
+                    <select name="meal-type-field" id="meal-type-field">
+                        <option selected value="">Meal type</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Teatime">Teatime</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                </label>
+                <label for="cuisine-type-field">
+                    <select name="cuisine-type-field" id="cuisine-type-field">
+                        <option selected value="">Cuisine</option>
+                        <option value="American">American</option>
+                        <option value="Asian">Asian</option>
+                        <option value="British">British</option>
+                        <option value="Caribbean">Caribbean</option>
+                        <option value="Central Europe">Central Europe</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Eastern Europe">Eastern Europe</option>
+                        <option value="French">French</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Kosher">Kosher</option>
+                        <option value="Mediterranean">Mediterranean</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Middle Eastern">Middle Eastern</option>
+                        <option value="Nordic">Nordic</option>
+                        <option value="South American">South American</option>
+                        <option value="South East Asian">Mexican</option>
+                    </select>
+                </label>
+                <label for="diet-labels">
+                    <select name="diet-labels" id="diet-labels">
+                        <option selected value="">Diet type</option>
+                        <option value="Balanced">Balanced</option>
+                        <option value="High-Fiber">High-Fiber</option>
+                        <option value="High-Protein">High-Protein</option>
+                        <option value="Low-Carb">Low-Carb</option>
+                        <option value="Low-Fat">Low-Fat</option>
+                        <option value="Low-Sodium">Low-Sodium</option>
+                    </select>
+                </label>
+                <label for="time-field">
+                    <select name="time-field" id="time-field">
+                        <option selected value="">Time</option>
+                        <option value="20">20 minutes</option>
+                        <option value="20-40">20-40 minutes</option>
+                        <option value="40+">40+ minutes</option>
+                    </select>
+                </label>
+                <button class="btn btn-form" type="submit">Search <i class=material-icons>arrow_forward</i></button>
+            </form>
+        </div>
+        <div id="main-error"></div>
     </section>
-    <ul id="recipe-card-list"></ul>
-    <div>
-        <article>
-            <img src="#" alt="">
-            <p></p>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <p></p>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <p></p>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <p></p>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <p></p>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <p></p>
-        </article>
-    </div>
+
+    <section class="outer-container">
+        <div class="inner-container">
+            <ul id="main__recipe-list" class="main__result-recipe-cards">
+                <!-- Cards via innerHTML -->
+            </ul>
+        </div>
+    </section>
+
 </main>
-<footer class="footerbar">
-    <div class="footertext">
-        <div>
-            <h4>Information</h4>
-            <ul class="ftr-information">
-                <li>Nullam a enim</li>
-                <li>Quisque cursus</li>
-                <li>Cras egestas</li>
-                <li>Nunc vitae</li>
-            </ul>
-        </div>
-        <div>
-            <h4>About</h4>
-            <ul class="ftr-information">
-                <li>Quisque cursus</li>
-                <li>Cras egestas</li>
-                <li>Nunc vitae</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <ul class="ftr-information">
-                <li>Cras egestas</li>
-                <li>Nunc vitae</li>
-                <li>Nullam a enim</li>
-            </ul>
-        </div>
-        <div class="socials">
-            <h4>Social</h4>
-            <span class="social-icons">
-            <img src="/assets/facebook.svg" alt="fbIcon">
-        </span>
-            <span class="social-icons">
-            <img src="/assets/instagram.svg" alt="instaIcon">
-        </span>
-            <span class="social-icons">
-            <img src="/assets/linkedin.svg" alt="linkIcon">
-        </span>
-            <span class="social-icons">
-            <img src="/assets/twitter.svg" alt="twttrIcon">
-        </span>
+
+<footer class="outer-container footer__container">
+
+    <div class="inner-container footer__list">
+        <h4>Information</h4>
+        <ul>
+            <li>Nullam a enim</li>
+            <li>Quisque cursus</li>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+        </ul>
+    </div>
+    <div class="inner-container footer__list">
+        <h4>About</h4>
+        <ul>
+            <li>Quisque cursus</li>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+        </ul>
+    </div>
+    <div class="inner-container footer__list">
+        <h4>Contact</h4>
+        <ul>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+            <li>Nullam a enim</li>
+        </ul>
+    </div>
+    <div class="inner-container footer__icon-container">
+        <h4>Social</h4>
+        <div class="footer__social">
+            <img src="./assets/facebook.svg" alt="facebook-icon" class="footer__icons">
+            <img src="./assets/instagram.svg" alt="instagram-icon" class="footer__icons">
+            <img src="./assets/linkedin.svg" alt="linkedin-icon" class="footer__icons">
+            <img src="./assets/twitter.svg" alt="twitter-icon" class="footer__icons">
         </div>
     </div>
+
 </footer>
+
 <span id="error-message"></span>
 </body>
 </html>
