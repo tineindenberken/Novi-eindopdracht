@@ -1,6 +1,6 @@
 import axios from "axios";
+// Make sure the recipe card function can be import
 import createRecipeCard from "./createRecipeCard";
-
 
 // Fetching data from Edamam API
 export default async function fetchRecipeData(searchQuery, mealType, cuisineType, dietLabels, time) {
@@ -12,9 +12,8 @@ export default async function fetchRecipeData(searchQuery, mealType, cuisineType
     const API_ID = "a5dd2681"
     const API_KEY = "a0155784e18c434777b77d2756991b7b"
 
-    // If succesfull then .....
+    // Fetch data from API
     try {
-        // Fetch data from API
         const response = await axios.get(URI + ENDPOINT, {
             params: {
                 type: "public",
@@ -29,11 +28,11 @@ export default async function fetchRecipeData(searchQuery, mealType, cuisineType
             }
         })
 
-        // Store recipe key in variale
+        // Variable to hold the needed data fetched from the API
         const arrayOfRecipes = response.data.hits
-        console.log(arrayOfRecipes);
-        // Deze moet er straks uit ^^
+        // console.log(arrayOfRecipes); // moet er nog uit
 
+        // Function to create a recipe card
         createRecipeCard(arrayOfRecipes);
 
         // Catch error message and show them in UI
