@@ -16,7 +16,7 @@ export const createRecipeIngredientList = (recipeInfo) => {
             recipeInfo.ingredientLines.map((ingredient) => {
             // Variable that links the list of ingredients in to HTML, and makes for every ingriedient a list item
             const ingredientsList = document.getElementById("ingredients-info");
-            ingredientsList.innerHTML = `
+            ingredientsList.innerHTML += `
                 <li>${ingredient}</li>
                 `})
         }

@@ -15,9 +15,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --darkblue: #004467;
-    --terqoise: #38a3a5;
-    --grey: #F8F9FA;
+    --darkblue: #293d52;
+    --terqoise: #70b5bd;
+    --grey: #ededed;
     --white: #ffffff;
 }
 
@@ -25,8 +25,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline-color: green;
-    outline-style: solid;
+    /*outline-color: green;*/
+    /*outline-style: solid;*/
 }
 
 body {
@@ -201,10 +201,16 @@ body {
 }
 
 input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
     font-size: medium;
     font-family: Poppins, sans-serif;
     border-style: none;
     width: 150px;
+    height: 35px;
+    padding-left: 10px;
 }
 
 .main__search-form select {
@@ -253,7 +259,6 @@ input {
     flex-shrink: 1;
     flex-wrap: wrap;
     padding-bottom: 15px;
-    /*overflow: hidden;*/
 }
 
 .recipe-card a {
@@ -367,7 +372,6 @@ h4 {
 .inner-container__recipe-header {
     display: flex;
     width: 100%;
-    background-color: red;
 }
 
 .recipe__name {
@@ -377,31 +381,33 @@ h4 {
     align-items: center;
     font-size: medium;
     gap: 10px;
-    background-color: aquamarine;
+    padding-bottom: 20px;
 }
 
-/*.inner-container__ingriedients-list {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: flex-start;*/
-/*    row-gap: 30px;*/
-/*    background-color: magenta;*/
-
-/*}*/
-
-h3 {
-    font-size: larger;
-    font-weight: bold;
-    padding-top: 30px;
+.inner-container__ingriedients-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 30px;
+    width: 65%;
+    flex-wrap: wrap;
 }
 
 .ingredients-info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 200px;
+    height: fit-content;
+    width: 100%
     position: relative;
-    background-color: mediumpurple;
+    margin-left: 20px;
+    min-height: 250px;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 30px;
 }
 
 .inner-container__recipe-img {
@@ -412,23 +418,29 @@ h3 {
     width: 60%;
     height: 50px;
     position: absolute;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
+.recipe__img {
+    border-radius: 5px;
+}
 
+.outer-container__nutrients-info-and-health-labels {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
 
-.outer-container__nutrients-info {
+.inner-container__nutrients-info {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    width: 300px;
+    margin-right: 10px;
 }
 
 .outer-container__health-labels {
     width: 50%;
-}
-
-.inner-container__health-labels-buttons {
-
 }
 
 .recipe__healthLabels {
@@ -443,6 +455,120 @@ h3 {
     height: 20px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 10px;
-
-
 }
+
+/* ---------  CALCULATOR PAGE  ----------*/
+
+.inner-container__calculator-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 0 300px;
+}
+
+.inner-container__calculator-header,
+.calculator__search,
+.calculator__product-info,
+.calculator__servings,
+.calculator__fetchedData {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#searchIngredient {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+#calculator__servings-form {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.calculator__form-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.calculator-product-info-type th {
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.calculator-fetchedData__type th {
+    text-align: center;
+    padding-right: 50px;
+}
+
+.calculator-fetchedData__data td{
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.calculator-fetchedData__total-of-data td{
+    border-top: 1px solid #283E53;
+}
+
+#query__calculator {
+    width: 200px;
+    height: 25px;
+}
+#calculator-servings-form__input {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--darkblue);
+}
+
+.calculator__search-button {
+    margin-left: 80px;
+}
+
+.inner-container__calculator-header h3 {
+    margin-bottom: 25px;
+}
+
+.calculator__fetchedData {
+    margin-top: 25px
+}
+
+.btn-calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--darkblue);
+    padding: 4px 10px;
+    background-color: var(--terqoise);
+    font-size: medium;
+    margin-right: 20px;
+}
+
+.btn-calculator:hover {
+    cursor: pointer;
+}
+
+.calculator__icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--darkblue);
+    margin-right: 20px;
+}
+
+
+
+

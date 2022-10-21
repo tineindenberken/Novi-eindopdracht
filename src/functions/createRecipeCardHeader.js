@@ -21,7 +21,7 @@ export default function createRecipeCardHeader(arr) {
 
         // Create the 3 recipe cards with the correct info using the data from API
         recipeListHeader.innerHTML += `
-                <div class="recipe-card"><a href="pages/recipe-page.html?id=${recipeId}">
+                <div class="recipe-card"><a href="pages/recipe-page.html?id=${recipeId}" target="_blank">
                 <img class="recipe-card__img" src="${item.recipe.image}" alt="foodimage">
                 <div class="recipe-card__text">
                 <h5 class="recipe-card__label">${item.recipe.label.slice(0, 35)}</h5>

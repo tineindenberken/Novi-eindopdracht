@@ -5,7 +5,7 @@ import {
     createRecipeImage,
     createNutrientsList,
     createRecipeHealthLabels
-} from "../functions/fetchRecipePageData"
+} from "../functions/fetchRecipePageData";
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     async function fetchRecipePageData() {
 
         // Declare input values for API
-        const URI = "https://api.edamam.com"
-        const ENDPOINT = "/api/recipes/v2/"
+        const URI = "https://api.edamam.com";
+        const ENDPOINT = "/api/recipes/v2/";
         // ID + KEY in README zetten en uitleggen waar te plaatsen
-        const API_ID = "a5dd2681"
-        const API_KEY = "a0155784e18c434777b77d2756991b7b"
+        const API_ID = "a5dd2681";
+        const API_KEY = "a0155784e18c434777b77d2756991b7b";
 
         // Fetch data from API
         try {
