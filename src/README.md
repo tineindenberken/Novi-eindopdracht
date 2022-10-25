@@ -9,11 +9,12 @@
 <h3>Introduction</h3>
 
 Do you enjoy good food but are you not always sure what to cook?  
-Just looking for inspiration? Or do you like to pay attention to what nutrients are in your meal?  
+Just looking for inspiration? Or do you like to pay attention to what nutrients are in your meal?   
 
-Don't look further because **_this application is for you!_**  
+Don't look further because **this application is for you!**  
 With this application you can search recipes based on their ingredients, cooking time, meal type, cuisine, or dietary requirements!  
 It also has the ability to search for the calorie count and nutrients of products by using the 'Calorie Calculator'.  
+
 ---
 
 <h3>Features</h3>
@@ -51,11 +52,13 @@ It also shows you the nutrients of the recipe and the health labels associated w
 
 **Calorie Calculator-page:**
 The Calorie Calculator lets you find products and their calories, fat and carbohydrates content.  
-You can add different products together that add up and give you he total amount of calories, fat and carbohydrates.
+You can add different products together that add up and give you he total amount of calories, fat and carbohydrates.  git
+
 ---
 
 <h3>Homepage preview:</h3>  
 ![Alt text](assets/localhost_1234%20---%20Home%20Page.png?raw=true "Preview Home-Page")
+
 ---
 
 <h3>Installation</h3>
