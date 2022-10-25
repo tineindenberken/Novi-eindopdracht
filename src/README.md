@@ -58,9 +58,9 @@ You can add different products together that add up and give you he total amount
 
 ---
 
-<h3>Homepage preview:</h3>  
+<h3>Homepage preview:</h3> 
 
-![alt text](assets/localhost_1234 --- Home Page.png)
+![preview](assets/previewHomepage.png)
 
 ---
 
@@ -137,4 +137,4 @@ There wll appear a link in the terminal that will take you to the application we
 If you want to quit running the npm press Ctrl + C
 
 You are now ready to use the application. Enjoy!  
----------------------------- 🤜 🤛 ----------------------------
+------------------------- 🤜 🤛 -------------------------
