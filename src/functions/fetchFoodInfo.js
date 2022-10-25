@@ -60,7 +60,7 @@ async function fetchFoodInfo (ingredient) {
             cellCarb.className = "serving-carbs"
 
 
-            //--------------Totaal Calorieen---------//
+            //----------Total Calories----------//
 
             const servingInfoCal = document.getElementsByClassName("serving-calories");
             const totalCaloriesArray = []
@@ -80,7 +80,7 @@ async function fetchFoodInfo (ingredient) {
             let calculatorTotalCal = document.getElementById("calculator-total-calories");
             calculatorTotalCal.innerHTML = totalAllCalories;
 
-            //--------------Totaal Vet---------//
+            //----------Total Vet----------//
 
             const servingInfoFat = document.getElementsByClassName("serving-fat");
             const totalFatArray = []
@@ -100,7 +100,7 @@ async function fetchFoodInfo (ingredient) {
             let calculatorTotalFat = document.getElementById("calculator-total-fat");
             calculatorTotalFat.innerHTML = totalAllFat;
 
-            //    -------------Totaal Carbs---------
+            //----------Total Carbs----------//
 
             const servingInfoCarbs = document.getElementsByClassName("serving-carbs");
             const totalCarbsArray = []
