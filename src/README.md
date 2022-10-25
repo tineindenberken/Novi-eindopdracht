@@ -50,33 +50,33 @@ This way your search results will remain open on the homepage.
 The recipe-page features all the information needed to prepare the recipe like: ingredients, images, etc..  
 It also shows you the nutrients of the recipe and the health labels associated with the recipe.  
 
-**Calorie Calculator-page:**
+**Calorie Calculator-page:**  
 The Calorie Calculator lets you find products and their calories, fat and carbohydrates content.  
-You can add different products together that add up and give you he total amount of calories, fat and carbohydrates.  git
+You can add different products together that add up and give you he total amount of calories, fat and carbohydrates.  
 
 ---
 
 <h3>Homepage preview:</h3>  
-![Alt text](assets/localhost_1234%20---%20Home%20Page.png?raw=true "Preview Home-Page")
 
+<img src="C:\Users\Admin\WebstormProjects\Novi-eindopdracht\src\assets\localhost_1234 --- Home Page.png"/>(assets/localhost_1234 --- Home Page.png)
 ---
 
 <h3>Installation</h3>
-**Step 1 - Download and Install an IDE.** 
+**Step 1 - Download and Install an IDE.**   
 To be able to run this project you will have to download an IDE like Webstorm if you don't already have one.  
 Follow the link below to download Webstorm for macOS, Windows or Linux: https://www.jetbrains.com/webstorm/download/#section=mac  
-Then follow the installation instructions on their website.
+Then follow the installation instructions on their website.  
 
 
-**Step 2 - Check Node.js and npm version.**    
-In the terminal type the following command to find out what version is being used:  
+**Step 2 - Check Node.js and npm version.**  
+In the terminal type the following command to find out what version is being used:    
 >node -v then press enter.  
 
 >npm -v then press enter.
 
 
 **Step 3 - Installing dependencies & development dependencies.**   
-In the terminal type the following commands:
+In the terminal type the following commands:  
 >npm init then press enter and follow the instructions in the terminal or keep pressing enter till you get a new command line.
 
 >npm install parcel --save-dev then press enter.
