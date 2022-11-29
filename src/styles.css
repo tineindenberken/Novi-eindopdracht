@@ -482,12 +482,12 @@ h3 {
 #searchIngredient {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 25%;
 }
 
 #calculator__servings-form {
     display: flex;
-    width: 50%;
+    width: 45%;
     justify-content: space-between;
 }
 
@@ -514,7 +514,7 @@ h3 {
 }
 
 .calculator-fetchedData__total-of-data td{
-    border-top: 1px solid #283E53;
+    border-top: 1px solid var(--darkblue);
 }
 
 #query__calculator {

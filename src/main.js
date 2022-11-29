@@ -25,7 +25,7 @@ submitForm.addEventListener('submit', ( event) => {
         mealType.value,
         cuisineType.value,
         dietLabels.value,
-        time.value
+        time.value,
     )
 } );
 

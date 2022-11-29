@@ -89,7 +89,7 @@ The development dependencies will show up in your package.json and package-lock.
 You can check if the following is added to the package.json file, otherwise add this into the file yourself:
 
 >"scripts": {  
-"start": "parcel build src/index.html",   
+"start": "parcel src/index.html",   
 "test": "echo "Error: no test specified" && exit 1"  
 }
 

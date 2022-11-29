@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// Declare function to fetch the data needed for the specific food information
 async function fetchFoodInfo (ingredient) {
 
     // Declare input value for API
@@ -9,6 +10,7 @@ async function fetchFoodInfo (ingredient) {
     const API_FOOD_DATABASE_ID = "1c9e4ed7"
     const API_FOOD_DATABASE_KEY = "a747307abc0ccdaddbcb08e3c7e48427"
 
+    // Fetch data from API
     try {
         const response = await axios.get(URI + ENDPOINT, {
             params: {
@@ -18,6 +20,7 @@ async function fetchFoodInfo (ingredient) {
             }
         })
 
+        // Variable that holds the needed recipe data fetched from the API
         const foodSearched = response.data;
         const foodFound = foodSearched.parsed[0].food;
         const foodName = foodFound.label;
@@ -26,6 +29,7 @@ async function fetchFoodInfo (ingredient) {
         const foodFat = Math.round(foodFound.nutrients.FAT);
         const foodCarbs = Math.round(foodFound.nutrients.CHOCDF);
 
+        // Make sure the food info can be import and links to HTML
         const ingredientOverview = document.getElementById("calculator-product-info-data");
         ingredientOverview.replaceChildren();
 
