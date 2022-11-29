@@ -1,15 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <!--    <meta charset="UTF-8">-->
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="fonts" href="styles-fonts.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="main.js" type="module" defer></script>
     <title>The Clueless Cook</title>
 </head>
-
 <body>
 
+<header class="outer-container">
+    <div class="inner-container">
+        <nav class="header__navbar">
+            <span class="header__logo">The Clueless Cook</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-footer">About</a></li>
+                <li><a href="pages/calculator-page.html" target="_blank">Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="outer-container header__hero">
+            <div class="inner-container header__content">
+                <h1>Delicious Recipes.</h1>
+                <p>Daily updated.</p>
+                <button class="btn btn-header" type="button"><a href="#">Find Recipes <i class=material-icons>arrow_forward</i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="outer-container">
+        <div class="inner-container white-space">
+
+            <ul id="random-recipe-container">
+                <!-- Cards via innnerHTML -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="outer-container main__search-form-container">
+        <div class="inner-container">
+            <form class="main__search-form" id="onSubmit" action="">
+                <label for="ingriedients-field" class="container-ingriedients-inputfield">
+                    <input id="ingriedients-field" type="text" placeholder="Recipe search">
+                    <i class=material-icons>search</i>
+                </label>
+                <label for="meal-type-field">
+                    <select name="meal-type-field" id="meal-type-field">
+                        <option selected value="">Meal type</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Teatime">Teatime</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                </label>
+                <label for="cuisine-type-field">
+                    <select name="cuisine-type-field" id="cuisine-type-field">
+                        <option selected value="">Cuisine</option>
+                        <option value="American">American</option>
+                        <option value="Asian">Asian</option>
+                        <option value="British">British</option>
+                        <option value="Caribbean">Caribbean</option>
+                        <option value="Central Europe">Central Europe</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Eastern Europe">Eastern Europe</option>
+                        <option value="French">French</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Kosher">Kosher</option>
+                        <option value="Mediterranean">Mediterranean</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Middle Eastern">Middle Eastern</option>
+                        <option value="Nordic">Nordic</option>
+                        <option value="South American">South American</option>
+                        <option value="South East Asian">Mexican</option>
+                    </select>
+                </label>
+                <label for="diet-labels">
+                    <select name="diet-labels" id="diet-labels">
+                        <option selected value="">Diet type</option>
+                        <option value="Balanced">Balanced</option>
+                        <option value="High-Fiber">High-Fiber</option>
+                        <option value="High-Protein">High-Protein</option>
+                        <option value="Low-Carb">Low-Carb</option>
+                        <option value="Low-Fat">Low-Fat</option>
+                        <option value="Low-Sodium">Low-Sodium</option>
+                    </select>
+                </label>
+                <label for="time-field">
+                    <select name="time-field" id="time-field">
+                        <option selected value="">Time</option>
+                        <option value="20">20 minutes</option>
+                        <option value="20-40">20-40 minutes</option>
+                        <option value="40+">40+ minutes</option>
+                    </select>
+                </label>
+                <button class="btn btn-form" type="submit">Search <i class=material-icons>arrow_forward</i></button>
+            </form>
+        </div>
+    </section>
+
+    <section class="outer-container">
+        <div class="inner-container">
+            <ul id="main__recipe-list" class="main__result-recipe-cards">
+                <!-- Cards via innerHTML -->
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer class="outer-container footer__container" id="about-footer">
+
+    <div class="inner-container footer__list">
+        <h4>Information</h4>
+        <ul>
+            <li>Nullam a enim</li>
+            <li>Quisque cursus</li>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+        </ul>
+    </div>
+    <div class="inner-container footer__list">
+        <h4>About</h4>
+        <ul>
+            <li>Quisque cursus</li>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+        </ul>
+    </div>
+    <div class="inner-container footer__list">
+        <h4>Contact</h4>
+        <ul>
+            <li>Cras egestas</li>
+            <li>Nunc vitae</li>
+            <li>Nullam a enim</li>
+        </ul>
+    </div>
+    <div class="inner-container footer__icon-container">
+        <h4>Social</h4>
+        <div class="footer__social">
+            <img src="./assets/facebook.svg" alt="facebook-icon" class="footer__icons">
+            <img src="./assets/instagram.svg" alt="instagram-icon" class="footer__icons">
+            <img src="./assets/linkedin.svg" alt="linkedin-icon" class="footer__icons">
+            <img src="./assets/twitter.svg" alt="twitter-icon" class="footer__icons">
+        </div>
+    </div>
+
+</footer>
+
+<span id="error-message"></span>
 </body>
 </html>

@@ -1,18 +1,20 @@
 {
   "name": "novi-eindopdracht",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eindopdracht Omscholingstraject Front-End Development 05/22",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html"
   },
-  "author": "",
+  "author": "Tine in den Berken",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "buffer": "^6.0.3",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
   }
 }
